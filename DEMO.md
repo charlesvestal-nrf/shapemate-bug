@@ -15,7 +15,7 @@ This repo contains fake firmware for the "ShapeMate" fitness tracker. It has thr
 Fork this repo on GitHub, then clone your fork:
 
 ```bash
-git clone https://github.com/<your-username>/shapemate-bug.git
+git clone https://github.com/charlesvestal-nrf/shapemate-bug.git
 cd shapemate-bug
 ```
 
