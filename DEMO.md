@@ -40,27 +40,11 @@ cat > .claude/settings.json << 'EOF'
 EOF
 ```
 
-Replace `<YOUR_MEMFAULT_API_KEY>` with a base64-encoded Memfault project key. You can find this in **Memfault > Settings > General > Project Key**.
+Replace `<YOUR_MEMFAULT_API_KEY>` with a Basic Auth User API Key. You can find this by logging into Demo with the francois account in 1password under the profile. Enable developer mode (command+shift+d) to show "Copy as Basic Auth Token" 
 
 ### 3. Look up the current issue IDs
 
-Issue IDs may change between Memfault environments. Open Claude Code and find the issues you'll demo:
-
-```bash
-claude
-```
-
-Then ask:
-
-> "List open Memfault issues"
-
-You should see three issues. Note the IDs for:
-
-| Issue title | Type |
-|-------------|------|
-| Assert at `gatt_send_next_pkt` | Assert |
-| Assert at `send_fitness_data_to_companion` | Assert |
-| Hard Fault at `check_shortcut` | Hard Fault |
+Issue IDs may change between Memfault environments. Find the issues for `gatt_send_next_pkt`, `send_fitness_data_to_companion` and `check_shortcut` and copy their IDs from the URL. For instance
 
 ## The Demo
 
