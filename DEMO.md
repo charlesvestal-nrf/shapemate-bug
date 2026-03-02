@@ -21,24 +21,7 @@ cd shapemate-bug
 
 ### 2. Configure the Memfault MCP server
 
-Create `.claude/settings.json` in the repo root:
-
-```bash
-mkdir -p .claude
-cat > .claude/settings.json << 'EOF'
-{
-  "mcpServers": {
-    "memfault": {
-      "type": "sse",
-      "url": "https://mcp.memfault.com/sse",
-      "headers": {
-        "Authorization": "Basic <YOUR_MEMFAULT_API_KEY>"
-      }
-    }
-  }
-}
-EOF
-```
+`claude mcp add memfault --transport http https://demo-api.memfault.com/api/v0/organizations/acme-inc/projects/shapemate/mcp --header "Authorization: Basic <YOUR_MEMFAULT_API_KEY>"`
 
 Replace `<YOUR_MEMFAULT_API_KEY>` with a Basic Auth User API Key. You can find this by logging into Demo with the `francois` account in 1password under the profile. Enable developer mode (command+shift+d) to show "Copy as Basic Auth Token" 
 
