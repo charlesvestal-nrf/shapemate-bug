@@ -40,7 +40,7 @@ cat > .claude/settings.json << 'EOF'
 EOF
 ```
 
-Replace `<YOUR_MEMFAULT_API_KEY>` with a Basic Auth User API Key. You can find this by logging into Demo with the francois account in 1password under the profile. Enable developer mode (command+shift+d) to show "Copy as Basic Auth Token" 
+Replace `<YOUR_MEMFAULT_API_KEY>` with a Basic Auth User API Key. You can find this by logging into Demo with the `francois` account in 1password under the profile. Enable developer mode (command+shift+d) to show "Copy as Basic Auth Token" 
 
 ### 3. Look up the current issue IDs
 
